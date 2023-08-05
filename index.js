@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.get('/wallpapers', (req, res) => {
   const wallpaperData = [];
 
-  const wallpaperPath = path.join(__dirname, '..', 'wallpapers');
+  const wallpaperPath = path.join(__dirname, 'wallpapers');
 
   fs.readdirSync(wallpaperPath).forEach(category => {
     const categoryPath = path.join(wallpaperPath, category);
@@ -26,7 +26,7 @@ app.get('/wallpapers', (req, res) => {
   res.json(wallpaperData);
 });
 
-app.use('/wallpapers', express.static(path.join(__dirname, '..', 'wallpapers')));
+app.use('/wallpapers', express.static(path.join(__dirname, 'wallpapers')));
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
