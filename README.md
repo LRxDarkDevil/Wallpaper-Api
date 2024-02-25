@@ -17,7 +17,3 @@ This API provides wallpapers for a mobile wallpaper app, allowing users to acces
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
